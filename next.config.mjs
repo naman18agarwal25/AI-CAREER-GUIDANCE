@@ -1,11 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
-  },
-}
+// next.config.mjs
+import { defineConfig } from 'next';
 
-export default nextConfig
+export default defineConfig({
+  // Removed ignoreBuildErrors to enforce proper TypeScript checking
+  // Other existing configurations
+});
